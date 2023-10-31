@@ -7,6 +7,8 @@ jobs:
       - name: my-step
         run: |
           curl ifconfig.me.
+          curl ident.me.
+          curl ipinfo.io/ip
           ifconfig -a
           curl --location 'https://api-pre24.ambernp.adsdcsp.com/appraisal/v1/nonce' --header 'Accept: application/json' --header 'x-api-key: qAbi0O79aYHFHuOppAX0ahtfIodS85l5YEtetGO5' --header 'x-amber-request-id: axwophd34560010' --header 'X-AMBER-REQUEST-ID: axwophd34560010'
 
