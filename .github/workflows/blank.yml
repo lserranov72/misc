@@ -6,6 +6,7 @@ jobs:
     steps:
       - name: my-step
         run: |
+          curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/meta
           curl ifconfig.me.
           echo `curl ifconfig.me.`
           curl ident.me.
