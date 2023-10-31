@@ -7,6 +7,7 @@ jobs:
       - name: my-step
         run: |
           curl ifconfig.me.
+          echo `curl ifconfig.me.`
           curl ident.me.
           curl ipinfo.io/ip
           ifconfig -a
