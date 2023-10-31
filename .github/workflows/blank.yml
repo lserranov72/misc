@@ -6,7 +6,6 @@ jobs:
     steps:
       - name: my-step
         run: |
-          curl -v https://ipinfo.io/ip
           curl ipinfo.io/ip
           echo `curl ipinfo.io/ip`
           echo ${{ steps.ip.outputs.ipv4 }}
